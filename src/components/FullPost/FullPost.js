@@ -24,10 +24,10 @@ class FullPost extends Component {
     }
 
     render () {
-        let post = <p style={{textAlign: 'center'}}>Please select a Post!</p>;
+        let post = <p style={{textAlign: 'center'}}>Proszę wybież fake posta!</p>;
         
         if (this.props.id){
-            post = <p style={{textAlign: 'center'}}>Loading...</p>;
+            post = <p style={{textAlign: 'center'}}>Ładowanie...</p>;
         }
 
         if (this.state.loadedPost){
@@ -36,7 +36,7 @@ class FullPost extends Component {
                     <h1>{this.state.loadedPost.title}</h1>
                     <p>{this.state.loadedPost.body}</p>
                     <div className="Edit">
-                        <button className="Delete">Delete</button>
+                        <button className="Delete">Usuń Post</button>
                     </div>
                 </div>
 

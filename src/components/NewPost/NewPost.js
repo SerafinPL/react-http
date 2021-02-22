@@ -12,17 +12,17 @@ class NewPost extends Component {
     render () {
         return (
             <div className="NewPost">
-                <h1>Add a Post</h1>
-                <label>Title</label>
+                <h1>Dodaj Post</h1>
+                <label>Tytuł</label>
                 <input type="text" value={this.state.title} onChange={(event) => this.setState({title: event.target.value})} />
-                <label>Content</label>
+                <label>Zawartość</label>
                 <textarea rows="4" value={this.state.content} onChange={(event) => this.setState({content: event.target.value})} />
-                <label>Author</label>
+                <label>Autor</label>
                 <select value={this.state.author} onChange={(event) => this.setState({author: event.target.value})}>
                     <option value="Kuba">Kuba</option>
                     <option value="Anita">Anita</option>
                 </select>
-                <button>Add Post</button>
+                <button>Dodaj Post</button>
             </div>
         );
     }
