@@ -2,6 +2,7 @@
   "name": "react-complete-guide",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://serafinpl.github.io/react-http",
   "dependencies": {
     "axios": "^0.21.1",
     "react": "^16.0.0",
@@ -12,6 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b online -d build -r https://github.com/SerafinPL/react-http.git"
   }
 }
